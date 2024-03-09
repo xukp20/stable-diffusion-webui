@@ -67,7 +67,7 @@ then
 fi
 
 # this script cannot be run as root by default
-can_run_as_root=0
+can_run_as_root=1
 
 # read any command line flags to the webui.sh script
 while getopts "f" flag > /dev/null 2>&1
@@ -268,6 +268,9 @@ prepare_tcmalloc() {
         fi
     fi
 }
+
+# Change Huggingface model cache directory
+export HF_HOME=./huggingface
 
 KEEP_GOING=1
 export SD_WEBUI_RESTART=tmp/restart
