@@ -1,0 +1,1 @@
+bash webui.sh --api --ckpt-dir="/hy-tmp/sd" --port 8080

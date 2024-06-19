@@ -23,10 +23,10 @@ then
 fi
 
 # If $venv_dir is "-", then disable venv support
-use_venv=1
-if [[ $venv_dir == "-" ]]; then
-  use_venv=0
-fi
+# use_venv=1
+# if [[ $venv_dir == "-" ]]; then
+#   use_venv=0
+# fi
 
 # Set defaults
 # Install directory without trailing slash
